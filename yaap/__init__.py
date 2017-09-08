@@ -136,7 +136,8 @@ class ArgParser(configargparse.ArgParser):
     def parse_args(self, *parsed_args, **kwargs):
         parsed_args = super(ArgParser, self).parse_args(*parsed_args, **kwargs)
 
-        if parsed_args.config is not None and self.config_path_base:
+        if hasattr(parsed_args, "config") and parsed_args.config is not None \
+                and self.config_path_base:
             config_path = os.path.abspath(parsed_args.config)
             work_path = os.path.dirname(config_path)
         else:
