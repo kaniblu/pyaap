@@ -12,7 +12,7 @@ setup(
     author_email="k@nib.lu",
     license="MIT",
     classifiers=[
-        "Deveopment Status :: 5 - Production/Stable",
+        "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3"
     ],
